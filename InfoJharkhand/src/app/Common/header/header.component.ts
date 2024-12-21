@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+
+  isNavbarCollapsed = true;
+
+  ngOnInit(){
+    
+  }
+
+  toggleNavbar() {
+    this.isNavbarCollapsed = !this.isNavbarCollapsed;
+  }
 }
