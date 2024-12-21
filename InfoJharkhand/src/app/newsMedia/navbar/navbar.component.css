@@ -1,19 +1,54 @@
-.navbar-nav {
-  margin-left: auto;
+/* Style for the Navbar Brand */
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #f8f9fa !important;
 }
 
-.navbar-nav .nav-item {
-  margin-right: 10px;
+/* Navigation Links Style */
+.nav-link {
+  font-size: 1rem;
+  margin: 0 0.5rem;
+  color: #f8f9fa;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
+/* Hover Effect for Navigation Links */
+.nav-link:hover {
+  color: #f39c12 !important;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+.logo{
+  height: 50px !important;
+  width: 200px !important;
+}
+
+/* For Small Screens */
 @media (max-width: 768px) {
-  .navbar-nav {
-    margin-top: 10px;
-    justify-content: flex-end;
+  .navbar {
+    padding: 0.5rem 1rem;
   }
+  .nav-link {
+    margin: 0.3rem 0;
+  }
+}
 
-  .navbar-nav .nav-item {
-    margin-right: 0;
-    margin-bottom: 5px;
-  }
+.image-container {
+  position: relative;
+  width: 300px;
+  height: 150px;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+}
+
+.image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
+  /* Remove the blue background */
+  mix-blend-mode: multiply;
 }
